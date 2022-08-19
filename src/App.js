@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Services from "./Components/Services/Services";
 import {Routes,Route} from 'react-router-dom';
 import Home from "./Components/Home/Home";
+import SocialLogin from "./Components/Login/SocialLogin";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
+      <SocialLogin/>
     </div>
   );
 }
