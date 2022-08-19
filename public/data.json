@@ -1,0 +1,44 @@
+[
+  {
+    "id": "62ffb303d4f9c7e3de6b7f96",
+    "name": "Fundamental Of UI/UX Design",
+    "image": "https://i.ibb.co/m5dNKSC/course-1.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  },
+  {
+    "id": "62ffb30395df03a771dc3073",
+    "name": "Fullstack Web Development",
+    "image": "https://i.ibb.co/k4k1ffs/course-3.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  },
+  {
+    "id": "62ffb3034400c684c22f128b",
+    "name": "Photography Basic Rules",
+    "image": "https://i.ibb.co/pQNTF2f/course-5.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  },
+  {
+    "id": "62ffb3033c2009f85343e4f8",
+    "name": "Javascript Basic to advanced",
+    "image": "https://i.ibb.co/FYMKrpV/course-2.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  },
+  {
+    "id": "62ffb303411564146100e42c",
+    "name": "Digital Marketing",
+    "image": "https://i.ibb.co/h9fgTXJ/course-4.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  },
+  {
+    "id": "62ffb303399a18e7d43164b7",
+    "name": "Motion Graphics",
+    "image": "https://i.ibb.co/thZSZsZ/course-6.png",
+    "price": 10,
+    "description": "Some quick example text to build on the card title and make up the bulk of the card."
+  }
+]
