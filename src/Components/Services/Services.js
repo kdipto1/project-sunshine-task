@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -14,7 +13,7 @@ const Services = () => {
     <section className="mt-4">
       <div className="text-center p-3">
         <h1>
-          Discover Our Popular <br /> Courses
+          Discover Our Popular <br /> Services
         </h1>
         <p>
           It is a long established fact that a reader will be distracted by the

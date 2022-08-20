@@ -4,18 +4,24 @@ import { useParams } from "react-router-dom";
 const Course = () => {
   const params = useParams();
   const [courses, setCourses] = useState([]);
-  console.log(params.id,"params id");
+
   useEffect(() => {
-    fetch("data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
-  }, [params.id]);
-  let course = courses.find((course) => course.id === params.id);
-  console.log(course);
+  }, []);
+  let course = courses.find((course) => course?.id === params?.id);
   return (
     <section className="container vh-100 mt-4">
       <h1>Your Selected Course:</h1>
-      <div></div>
+      <div className="m-3">
+        <img src={course?.image} alt="" />
+        <h4>Course Id: {course?.id}</h4>
+        <h4>Course Name: {course?.name}</h4>
+        <h4>Course Price: {course?.price}$</h4>
+        <p>Description: {course?.description}</p>
+        <button className="btn btn-outline-secondary">Proceed Payment</button>
+      </div>
     </section>
   );
 };

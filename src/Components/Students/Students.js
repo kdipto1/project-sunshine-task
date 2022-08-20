@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 const Students = () => {
   const [students, setStudents] = useState([]);
   useEffect(() => {
-    fetch("students.json")
+    fetch("/students.json")
       .then((res) => res.json())
       .then((data) => setStudents(data));
   }, []);

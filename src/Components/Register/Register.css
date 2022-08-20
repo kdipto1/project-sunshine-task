@@ -2,7 +2,7 @@
   min-height: 90vh;
 }
 .register h2 {
-  color: coral;
+  color: black;
   font-weight: 700;
   font-family: sans-serif;
 }
@@ -13,16 +13,16 @@
   border-radius: 5px;
   padding-left: 10px;
   margin: 5px auto;
-  border: 2px solid coral;
+  border: 2px solid black;
 }
 #btn {
-  color: rgb(255, 68, 0);
-  background-color: antiquewhite;
+  color: black;
+  background-color: white;
 }
 #btn:hover {
   cursor: pointer;
-  background-color: rgb(255, 127, 80);
-  color: black;
+  background-color: black;
+  color: white;
 }
 @media only screen and (max-width: 900px) {
   .register input {
@@ -32,6 +32,6 @@
     border-radius: 5px;
     padding-left: 10px;
     margin: 5px auto;
-    border: 2px solid coral;
+    border: 2px solid black;
   }
 }

@@ -13,10 +13,18 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/course/:id" element={<Course/>} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          exact
+          path="/course/:id"
+          element={
+            <RequireAuth>
+              <Course />
+            </RequireAuth>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>

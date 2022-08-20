@@ -3,14 +3,12 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
-  console.log(user.email);
   useEffect(() => {
     if (loading) {
       return;
@@ -27,16 +25,15 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
+          <Nav className="mx-auto">
+            {user ? <p>{user?.displayName}</p> : <p>{user?.email}</p>}
+          </Nav>
           <Nav>
-            <Nav.Link>
-              {user ? user?.displayName : user?.email}
-            </Nav.Link>
+            <Nav></Nav>
             {user ? (
               <Nav.Link
                 style={{
-                  color: "crimson",
-                  fontWeight: 700,
+                  color: "salmon",
                   fontFamily: "sans-serif",
                 }}
                 className="text-decoration-none fw-bold"
@@ -46,8 +43,11 @@ const Header = () => {
               </Nav.Link>
             ) : (
               <Nav.Link
+                style={{
+                  color: "red",
+                  fontFamily: "sans-serif",
+                }}
                 className="text-decoration-none fw-bold"
-                onClick={() => console.log("clicked")}
                 as={Link}
                 to="/login"
               >
