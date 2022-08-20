@@ -1,0 +1,26 @@
+[
+  {
+    "id": "62ffb303d4f9c7e3de6b7f96",
+    "name": "Awlad Hossain",
+    "image": "https://i.ibb.co/ssctqHN/student-1.png",
+    "description": "UIUX Designer"
+  },
+  {
+    "id": "62ffb30395df03a771dc3073",
+    "name": "Jannatul Islam",
+    "image": "https://i.ibb.co/Yhzsp7S/student-2.png",
+    "description": "Motion Design"
+  },
+  {
+    "id": "62ffb3034400c684c22f128b",
+    "name": "Imran Hossain",
+    "image": "https://i.ibb.co/R3tX98W/student-3.png",
+    "description": "Graphic Designer"
+  },
+  {
+    "id": "62ffb3033c2009f85343e4f8",
+    "name": "Nishi Akter",
+    "image": "https://i.ibb.co/QpV3KVx/student-4.png",
+    "description": "Web Developer"
+  }
+]

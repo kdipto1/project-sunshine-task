@@ -5,7 +5,7 @@ import cover3 from "../../Images/cover3.jpg";
 
 const Banner = () => {
   return (
-    <Carousel>
+    <Carousel className="mt-2">
       <Carousel.Item>
         <img className="d-block w-100" src={cover1} alt="First slide" />
         <Carousel.Caption>
